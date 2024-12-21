@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Left, Text Right</title>
+    <style>
+        .container {
+            display: flex; /* Enables flexbox layout */
+            align-items: center; /* Vertically aligns content */
+            justify-content: space-between; /* Evenly distributes items */
+            padding: 20px;
+            gap: 20px; /* Adds space between the image and text */
+        }
+
+        .container img {
+            width: fit-content; /* Adjust image width */
+            height: fit-content; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+
+        .container .text {
+            width: 55%; /* Adjust text container width */
+            font-size: 18px; /* Adjust text size */
+            line-height: 1.6; /* Improve readability */
+            color: #333; /* Text color */
+            align-items: center;
+            position: absolute;
+            
+        }
+
+        .dot::before  {
+            
+            content: ""; /* Generates the point */
+            display: inline-block; /* Makes the dot visible */
+            width: 10px; /* Dot width */
+            height: 10px; /* Dot height */
+            background-color: black; /* Dot color */
+            border-radius: 50%; /* Makes it a circle */
+            margin-right: 10px; /* Space between the point and text */
+            vertical-align: middle; /* Aligns the dot with text */
+            
+
+        }
+    </style>
+</head>
+<body bgcolor="#FFFDD0">
+    <div class="container">
+        <img src="hey.webp" width="800px" height="1000px" alt="Sample Image">
+        <div class="text">
+            <h1>CROCHET FLOWER</h1>
+            <p><H4>Basic Crochet Flower We Have</H4>
+                 </p>
+        <div class="dot">Simple Five-Petal Flower.</div>
+            <div class="dot">Layered Flowers.</div>
+                <div class="dot">Rose Style.</div>
+            <p>
+                You can customize the styles to adjust spacing, alignment, and more.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
